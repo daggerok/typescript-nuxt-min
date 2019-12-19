@@ -1,0 +1,25 @@
+{
+  "name": "typescript-nuxt-min",
+  "version": "1.0.0",
+  "description": "Minimal Nuxt.js TypeScript project from scratch",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nuxt/typescript-build": "0.5.2"
+  },
+  "dependencies": {
+    "nuxt": "2.11.0"
+  }
+}
