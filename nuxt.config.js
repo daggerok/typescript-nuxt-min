@@ -71,14 +71,14 @@ export default {
   //   extend (config, ctx) { }
   // },
 
-  // generate: {
-  //   routes: [
-  //     '/',
-  //   ],
-  // },
+  generate: {
+    routes: [
+      '/',
+    ],
+  },
 
-  // router: {
-  //   base: baseHref,
-  //   mode: 'history',
-  // },
+  router: {
+    base: baseHref,
+    mode: 'history',
+  },
 };
