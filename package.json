@@ -1,25 +1,45 @@
 {
   "name": "typescript-nuxt-min",
-  "version": "1.0.0",
-  "description": "Minimal Nuxt.js TypeScript project from scratch",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Using NuxtJS Composition API with TypeScript",
+  "main": "nuxt.config.js",
   "scripts": {
     "dev": "nuxt",
+    "start": "nuxt dev",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "predeploy": "cross-env BASE_HREF='/typescript-nuxt-min/' npm run generate",
+    "serve": "serve ./dist",
+    "prepm2": "npm run generate",
+    "pm2": "pm2 start 'npm run serve' --name app",
+    "restart": "pm2 restart app",
+    "logs": "pm2 logs",
+    "stop": "pm2 kill"
   },
   "keywords": [
+    "ts",
+    "pm2",
     "vue",
     "nuxt",
+    "serve",
+    "eslint",
+    "nuxt-ts",
+    "cross-env",
     "typescript"
   ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@nuxt/typescript-build": "0.5.2"
+    "@nuxt/typescript-build": "0.6.6",
+    "@nuxtjs/eslint-config-typescript": "1.0.2",
+    "@types/node": "13.13.4",
+    "cross-env": "7.0.2",
+    "eslint": "6.8.0",
+    "pm2": "4.4.0",
+    "serve": "11.3.0"
   },
   "dependencies": {
-    "nuxt": "2.11.0"
+    "nuxt": "2.12.2"
   }
 }
