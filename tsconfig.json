@@ -24,6 +24,9 @@
     },
     "types": [
       "@nuxt/types"
+    ],
+    "typeRoots": [
+      "./types"
     ]
   }
 }

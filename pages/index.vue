@@ -1,18 +1,25 @@
 <template>
-  <div class="app">
-    <h1>Hello, {{ id }} and option API!</h1>
+  <div>
+    <App :user="user"/>
   </div>
 </template>
 
-<script lang="ts"> // <--- THIS lang="ts" IS REALLY IMPORTANT!
-  import Vue from 'vue';
+<script lang="ts">
+  import { defineComponent, reactive } from '@vue/composition-api';
+  import App from '@/components/App.vue';
+  import User from '~/src/User';
 
-  export default Vue.extend({
-    data() {
-      const id: string = 'TypeScript';
-
+  export default defineComponent({
+    components: {
+      App,
+    },
+    setup() {
+      const user = reactive<User>({
+        firstName: 'Maksimko',
+        lastName: 'Passwordinko',
+      });
       return {
-        id,
+        user,
       };
     }
   });

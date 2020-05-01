@@ -3,7 +3,7 @@ const title = process.env.npm_package_name || ''
 const content = process.env.npm_package_description || '';
 
 export default {
-  // mode: 'universal',
+  mode: 'universal',
 
   head: {
     title,
@@ -14,20 +14,22 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: baseHref + 'favicon.ico' },
-    ]
+    ],
   },
 
-  // /**
-  //  *  Customize the progress-bar color
-  //  */
-  // loading: { color: '#fff' },
+  /**
+   *  Customize the progress-bar color
+   */
+  loading: { color: '#fff' },
 
   // /**
   //  *  Global CSS
   //  */
   // css: [],
 
-  // plugins: [],
+  plugins: [
+    '@/plugins/composition-api',
+  ],
 
   /**
    * Nuxt dev-modules
