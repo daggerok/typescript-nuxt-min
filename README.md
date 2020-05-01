@@ -1,6 +1,12 @@
 # typescript-nuxt-min [![CI](https://github.com/daggerok/typescript-nuxt-min/workflows/CI/badge.svg)](https://github.com/daggerok/typescript-nuxt-min/actions?query=workflow%3ACI) [![Build Status](https://travis-ci.org/daggerok/typescript-nuxt-min.svg?branch=master)](https://travis-ci.org/daggerok/typescript-nuxt-min)
 Minimal NuxtJS TypeScript example starter project using Options, Class and Composition APIs (see branches)
 
+## Table of Contents
+* [Options API](#options-api)
+* [Class API](#class-api)
+* [Composition API](#composition-api)
+* [Resources](#resources)
+
 ## Options API
 
 see [Options API](https://github.com/daggerok/typescript-nuxt-min/tree/options-api) branch.
@@ -104,13 +110,13 @@ see [Options API](https://github.com/daggerok/typescript-nuxt-min/tree/options-a
 1. open http://127.0.0.1:5000/
 1. GitHub Pages deployment located [here](https://daggerok.github.io/typescript-nuxt-min/)
 
-## Composition API
-
-see [Composition API](https://github.com/daggerok/typescript-nuxt-min/tree/composition-api) branch.
-
 ## Class API
 
 see [Class API](https://github.com/daggerok/typescript-nuxt-min/tree/class-api) branch.
+
+## Composition API
+
+see [Composition API](https://github.com/daggerok/typescript-nuxt-min/tree/composition-api) branch.
 
 ## resources
 
