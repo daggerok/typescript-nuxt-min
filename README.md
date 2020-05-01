@@ -1,4 +1,4 @@
-# typescript-nuxt-min [![CI](https://github.com/daggerok/typescript-nuxt-min/workflows/CI/badge.svg)](https://github.com/daggerok/typescript-nuxt-min/actions?query=workflow%3ACI)
+# typescript-nuxt-min [![CI](https://github.com/daggerok/typescript-nuxt-min/workflows/CI/badge.svg)](https://github.com/daggerok/typescript-nuxt-min/actions?query=workflow%3ACI) [![Build Status](https://travis-ci.org/daggerok/typescript-nuxt-min.svg?branch=master)](https://travis-ci.org/daggerok/typescript-nuxt-min)
 Minimal Nutx.js TypeScript example starter project using Options and Component APIs.
 
 1. generate new npm project from scratch:
