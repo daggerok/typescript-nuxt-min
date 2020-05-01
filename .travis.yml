@@ -43,12 +43,12 @@ jobs:
     - cd $TRAVIS_BUILD_DIR && npm i
     - cd $TRAVIS_BUILD_DIR && npm run generate
     - docker run -d --rm --name app -p 80:80 -v $TRAVIS_BUILD_DIR/dist:/usr/share/nginx/html:ro
-      --health-cmd="wget -q --spider http://127.0.0.1:80/ || exit 1"
-      --health-start-period=1s
-      --health-interval=1s
-      --health-retries=33
-      --health-timeout=1s
-      nginx:1.17.6-alpine
+                    --health-cmd="wget -q --spider http://127.0.0.1:80/ || exit 1"
+                    --health-start-period=1s
+                    --health-interval=1s
+                    --health-retries=33
+                    --health-timeout=1s
+                    nginx:1.17.6-alpine
     - wait_healthy_docker_containers 1
     script: http :/
     after_script: docker rm -f -v app
@@ -72,4 +72,4 @@ jobs:
       local-dir: $TRAVIS_BUILD_DIR/dist
       on:
         all_branches: true
-        condition: $TRAVIS_BRANCH =~ ^(master|ci)$
+        #condition: $TRAVIS_BRANCH =~ ^(master|ci)$
