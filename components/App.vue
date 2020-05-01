@@ -5,29 +5,22 @@
   </div>
 </template>
 
-<script lang="ts"> // <--- THIS lang="ts" IS REALLY IMPORTANT!
-import { computed, defineComponent, ref } from '@vue/composition-api';
-import User from '~/src/User';
+<script lang="ts">
+  import { Component, Prop, Vue } from 'vue-property-decorator';
+  import User from '~/src/User';
 
-export default defineComponent({
-  name: 'App',
-
-  props: {
-    user: {
+  @Component//({ name: 'App' })
+  export default class App extends Vue {
+    @Prop({
       type: Object as () => User,
       required: true,
+    })
+    user!: User
+
+    message: string = 'This is Class API...';
+
+    get fullName(): String {
+      return `${this.user.firstName} ${this.user.lastName}`;
     }
-  },
-
-  setup({ user }) {
-    console.log('user', user);
-    const fullName = computed(() => `${user.firstName} ${user.lastName}`);
-    const message = ref('Using Composition API...');
-
-    return {
-      fullName,
-      message,
-    };
-  },
-});
+  }
 </script>

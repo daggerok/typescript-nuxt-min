@@ -1,7 +1,7 @@
 {
   "name": "typescript-nuxt-min",
   "version": "2.0.0",
-  "description": "Using NuxtJS Composition API with TypeScript",
+  "description": "Minimal NuxtJS TypeScript example starter project using Options, Class and Composition APIs",
   "main": "nuxt.config.js",
   "scripts": {
     "dev": "nuxt",
@@ -41,7 +41,7 @@
     "vue": "2.6.11"
   },
   "dependencies": {
-    "@vue/composition-api": "0.5.0",
-    "nuxt": "2.12.2"
+    "nuxt": "2.12.2",
+    "vue-property-decorator": "8.4.2"
   }
 }

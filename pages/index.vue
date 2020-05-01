@@ -1,26 +1,27 @@
 <template>
   <div>
-    <App :user="user"/>
+    <App :user="user" />
   </div>
 </template>
 
 <script lang="ts">
-  import { defineComponent, reactive } from '@vue/composition-api';
+  import { Component, Vue } from 'vue-property-decorator';
   import App from '@/components/App.vue';
   import User from '~/src/User';
 
-  export default defineComponent({
+  @Component({
     components: {
       App,
     },
-    setup() {
-      const user = reactive<User>({
+  })
+  export default class Index extends Vue {
+    user!: User;
+
+    created() {
+      this.user = {
         firstName: 'Maksimko',
         lastName: 'Passwordinko',
-      });
-      return {
-        user,
       };
     }
-  });
+  }
 </script>

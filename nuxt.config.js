@@ -27,9 +27,7 @@ export default {
   //  */
   // css: [],
 
-  plugins: [
-    '@/plugins/composition-api',
-  ],
+  plugins: [],
 
   /**
    * Nuxt dev-modules
