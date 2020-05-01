@@ -1,7 +1,7 @@
 {
   "name": "typescript-nuxt-min",
   "version": "2.0.0",
-  "description": "Using NuxtJS Composition API with TypeScript",
+  "description": "Minimal NuxtJS TypeScript example starter project using Options, Class and Composition APIs",
   "main": "nuxt.config.js",
   "scripts": {
     "dev": "nuxt",
@@ -28,8 +28,8 @@
     "cross-env",
     "typescript"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "daggerok",
+  "license": "MIT",
   "devDependencies": {
     "@nuxt/typescript-build": "0.6.6",
     "@nuxtjs/eslint-config-typescript": "1.0.2",
