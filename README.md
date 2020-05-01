@@ -67,7 +67,7 @@ Minimal Nutx.js TypeScript example starter project.
      ],
    }
    ```
-1. create _pages/index.vue` file:
+1. create _pages/index.vue_ file:
    ```vue
    <template>
      <div class="app">
