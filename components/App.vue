@@ -22,7 +22,7 @@ export default defineComponent({
   setup({ user }) {
     console.log('user', user);
     const fullName = computed(() => `${user.firstName} ${user.lastName}`);
-    const message = ref('ololo-trololo...');
+    const message = ref('Using Composition API...');
 
     return {
       fullName,
