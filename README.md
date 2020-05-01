@@ -1,5 +1,9 @@
 # typescript-nuxt-min [![CI](https://github.com/daggerok/typescript-nuxt-min/workflows/CI/badge.svg)](https://github.com/daggerok/typescript-nuxt-min/actions?query=workflow%3ACI) [![Build Status](https://travis-ci.org/daggerok/typescript-nuxt-min.svg?branch=master)](https://travis-ci.org/daggerok/typescript-nuxt-min)
-Minimal Nutx.js TypeScript example starter project using Options and Composition APIs.
+Minimal NuxtJS TypeScript example starter project using Options, Class and Composition APIs (see branches)
+
+## Options API
+
+see [Options API](https://github.com/daggerok/typescript-nuxt-min/tree/options-api) branch.
 
 1. generate new npm project from scratch:
    ```bash
@@ -100,6 +104,16 @@ Minimal Nutx.js TypeScript example starter project using Options and Composition
 1. open http://127.0.0.1:5000/
 1. GitHub Pages deployment located [here](https://daggerok.github.io/typescript-nuxt-min/)
 
+## Composition API
+
+see [Composition API](https://github.com/daggerok/typescript-nuxt-min/tree/composition-api) branch.
+
+## Class API
+
+see [Class API](https://github.com/daggerok/typescript-nuxt-min/tree/class-api) branch.
+
 ## resources
 
+* [typescript.nuxtjs.org documentation](https://typescript.nuxtjs.org/cookbook/components/)
+* [examples repository](https://github.com/nuxt/typescript/blob/master/examples/)
 * https://codesandbox.io/s/github/nuxt/typescript/tree/master/examples/options-api/minimal?from-embed

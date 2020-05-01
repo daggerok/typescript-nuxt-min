@@ -1,7 +1,7 @@
 {
   "name": "typescript-nuxt-min",
   "version": "2.0.0",
-  "description": "Using NuxtJS Composition API with TypeScript",
+  "description": "Minimal NuxtJS TypeScript example starter project using Options, Class and Composition APIs",
   "main": "nuxt.config.js",
   "scripts": {
     "dev": "nuxt",
