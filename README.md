@@ -58,7 +58,7 @@ Minimal Nutx.js TypeScript example starter project.
      }
    }
    ```
-   whre `@nuxt/types` should not be installed -- it's already packages together with `@nuxt/typescript-build`.
+   whre `@nuxt/types` should not be installed - it's already packages together with `@nuxt/typescript-build`.
 1. create _nuxt.config.js_ file:
    ```js
    export default {
