@@ -1,5 +1,5 @@
-# typescript-nuxt-min
-Minimal Nutx.js TypeScript example starter project.
+# typescript-nuxt-min [![CI](https://github.com/daggerok/typescript-nuxt-min/workflows/CI/badge.svg)](https://github.com/daggerok/typescript-nuxt-min/actions?query=workflow%3ACI)
+Minimal Nutx.js TypeScript example starter project using Options and Component APIs.
 
 1. generate new npm project from scratch:
    ```bash
@@ -98,6 +98,7 @@ Minimal Nutx.js TypeScript example starter project.
    npx serve dist
    ```
 1. open http://127.0.0.1:5000/
+1. GitHub Pages deployment located [here](https://daggerok.github.io/typescript-nuxt-min/)
 
 ## resources
 
